@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post an Errand - LocalRunner</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="post_errand.html">Post_Errand</a></li>
+            <li><a href="errand_list.html">Available_Errands</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="admin.html">Admin</a></li>
+        </ul>
+    </nav>
+
+    <section class="post-errand">
+        <h2>Post a New Errand</h2>
+        <form id="errand-form">
+            <label for="task">Task Description:</label>
+            <input type="text" id="task" name="task" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="time">Preferred Time:</label>
+            <input type="text" id="time" name="time" required>
+
+           <label for="reward">Reward</label>
+        <input type="text" id="reward" name="reward" class="form-control" placeholder="Enter the reward amount">
+
+        <label for="title">Errand Title</label>
+            <input type="text" id="title" name="title" class="form-control" placeholder="Enter errand title" maxlength="50">
+
+                <label for="description">Description</label>
+                    <textarea id="description" name="description" class="form-control"
+                        placeholder="Provide additional details about the errand"></textarea>
+
+            
+            <button type="submit" class="cta-button">Submit Errand</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 LocalRunner. All Rights Reserved.</p>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>
